@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LR
 {
-    abstract class Duck
+    public abstract class Duck
     {
         public string quack()
         {
