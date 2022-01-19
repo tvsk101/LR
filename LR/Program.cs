@@ -11,15 +11,16 @@ namespace LR
         static void Main(string[] args)
         {
             RedheadDuck RD = new RedheadDuck();
-            Console.WriteLine(RD.display());
-            Console.WriteLine(RD.quack());
-            Console.WriteLine(RD.swim());
+            MallardDuck MD = new MallardDuck();
 
-            Duck MD = new MallardDuck();
-            Console.WriteLine(MD.display());
-            Console.WriteLine(MD.quack());
-            Console.WriteLine(MD.swim());
+            Duck[] Ducks = new Duck[] { MD, RD };
 
+            for (int i = 0; i < Ducks.Length; i++)
+            {
+                Console.WriteLine(Ducks[i].display());
+                Console.WriteLine(Ducks[i].quack());
+                Console.WriteLine(Ducks[i].swim());
+            }
             Console.ReadKey();
         }
     }
