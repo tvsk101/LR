@@ -10,10 +10,10 @@ namespace LR
     {
         static void Main(string[] args)
         {
-            RedheadDuck RD = new RedheadDuck();
-            MallardDuck MD = new MallardDuck();
+            RedheadDuck RD1 = new RedheadDuck();
+            MallardDuck MD1 = new MallardDuck();
 
-            Duck[] Ducks = new Duck[] { MD, RD };
+            Duck[] Ducks = new Duck[] { MD1, RD1 };
 
             for (int i = 0; i < Ducks.Length; i++)
             {
