@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LR
 {
-    public class MallardDuck : Duck, IFlyableInterface, IQuackableInterface
+    public class MallardDuck : Duck, IFlyable, IQuackable
     {
         public override string display()
         {

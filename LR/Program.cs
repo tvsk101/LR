@@ -22,14 +22,14 @@ namespace LR
                 Console.WriteLine(duck.display());
                 Console.WriteLine(duck.swim());
 
-                if (duck is IQuackableInterface)
+                if (duck is IQuackable)
                 {
-                    Console.WriteLine((duck as IQuackableInterface).quack());
+                    Console.WriteLine((duck as IQuackable).quack());
                 }
 
-                if (duck is IFlyableInterface)
+                if (duck is IFlyable)
                 {
-                    Console.WriteLine((duck as IFlyableInterface).fly());
+                    Console.WriteLine((duck as IFlyable).fly());
                 }
 
             }

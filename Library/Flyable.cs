@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LR
 {
-    public interface IFlyableInterface
+    public interface IFlyable
     {
         string fly();
     }
