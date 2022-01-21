@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace LR
 {
-    public abstract class Duck
+    public class DecoyDuck : Duck
     {
-        public string swim()
+        public override string display()
         {
-            return "swim " + this.GetType();
+            return "display " + this.GetType();
         }
-        abstract public string display();
     }
 }
