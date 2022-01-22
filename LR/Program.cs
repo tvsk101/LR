@@ -1,4 +1,6 @@
 ﻿using System;
+using Library.Behaviors;
+using Library.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,17 +21,17 @@ namespace LR
 
             foreach (Duck duck in Ducks)
             {
-                Console.WriteLine(duck.display());
-                Console.WriteLine(duck.swim());
+                Console.WriteLine(duck.Display());
+                Console.WriteLine(duck.Swim());
 
-                if (duck is IQuackable)
+                if (duck is QuackBehavior)
                 {
-                    Console.WriteLine((duck as IQuackable).quack());
+                    Console.WriteLine((duck as QuackBehavior).Quack());
                 }
 
-                if (duck is IFlyable)
+                if (duck is FlyBehavior)
                 {
-                    Console.WriteLine((duck as IFlyable).fly());
+                    Console.WriteLine((duck as FlyBehavior).Fly());
                 }
 
             }

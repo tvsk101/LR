@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LR
+namespace Library.Interfaces
 {
-    public interface IQuackable
+    public interface QuackBehavior
     {
-        string quack();
+        string Quack();
     }
 }

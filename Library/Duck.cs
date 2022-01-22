@@ -1,17 +1,41 @@
 ﻿using System;
+using Library.Interfaces;
+using Library.Behaviors;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LR
+namespace Library
 {
-    public abstract class Duck
+    public abstract class Duck 
     {
-        public string swim()
+        protected FlyBehavior flybehavior;
+        protected QuackBehavior quackbehavior;
+
+        public string Swim()
         {
-            return "swim " + this.GetType();
+            return "Буль буль буль";
         }
-        abstract public string display();
+        public abstract string Display();
+
+        public string PerformFly()
+        {
+            return flybehavior.Fly();
+        }
+
+        public string PerformQuack()
+        {
+            return quackbehavior.Quack();
+        }
+
+        public void SetFlyBehavior(FlyBehavior flyb)
+        {
+            flybehavior = flyb;
+        }
+        public void SetQuackBehavior(QuackBehavior quackb)
+        {
+            quackbehavior = quackb;
+        }
     }
 }

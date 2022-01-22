@@ -1,16 +1,17 @@
 ﻿using System;
+using Library.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LR
+namespace Library.Behaviors
 {
-    public class DecoyDuck : Duck
+    public class MuteQuack : QuackBehavior
     {
-        public override string display()
+        public string Quack()
         {
-            return "display " + this.GetType();
+            return "";
         }
     }
 }
