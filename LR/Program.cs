@@ -46,8 +46,6 @@ namespace LR
                 Console.WriteLine(duck.Swim());
                 Console.WriteLine(duck.PerformFly());
                 Console.WriteLine(duck.PerformQuack());
-
-
             }
             Console.ReadKey();
         }
