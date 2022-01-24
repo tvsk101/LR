@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR", "LR\LR.csproj", "{3E13B83A-DB56-45B3-9466-FA0DBFD9B59E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "strategy-pattern", "LR\strategy-pattern.csproj", "{3E13B83A-DB56-45B3-9466-FA0DBFD9B59E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{B59E7104-E92A-4906-A4C1-28B3DC367D1B}"
 EndProject
