@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Library.Behaviors
 {
-    class FlyNoWay : FlyBehavior
+    public class FlyNoWay : FlyBehavior
     {
         public string Fly()
         {
